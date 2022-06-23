@@ -1,0 +1,15 @@
+.mat-drawer-container {
+    height: 100%;
+
+}
+
+.mat-drawer {
+    background-color: rgba(231, 231, 231, 0.418);
+    width: 200px;
+    padding-top: 100px;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.mat-drawer-content {
+    padding-top: 50px;
+}

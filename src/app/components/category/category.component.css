@@ -1,0 +1,47 @@
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.756);
+    font-weight: 400;
+}
+
+a:hover {
+    color: blue;
+}
+
+input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+input+input {
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+    color: blue;
+    font-weight: 600;
+}
+
+.active {
+    color: rgb(15, 234, 15);
+}

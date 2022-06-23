@@ -1,0 +1,54 @@
+<div class="card-top container-fluid lg-8">
+<div class="flex-container">
+
+
+     <select type="submit" (change)="OnCategoryChange($event)" class="form-select byCategory" aria-label="Default select example">
+        <option selected>Search By Category</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Clothing">Clothing</option>
+        
+      </select>
+
+      <select type="submit" (change)="OnTypeChange($event)" class="form-select  byCategory" aria-label="Default select example">
+        <option selected>Search By Type</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Washing Machine">Washing Macine</option>
+        <option value="Shirt">Shirt</option>
+        
+      </select>
+
+    
+
+</div>
+
+    <div class="container d-flex flex-column p-5">
+        <div class="item" *ngFor="let item of productList">
+            <div class="img-container">
+                <img src="{{'../../../assets/images/'+item.imageName}}" alt="image">
+            </div>
+
+            <div class="details-container">
+
+                <h2>{{item.name}}</h2>
+                <h3>{{item.price}}.Rs</h3>
+                <p>{{item.category}}</p>
+                <p>{{item.type}}</p>
+
+                <hr>
+
+                <div class="details">
+                    <div class="text">
+                        <p>{{item.description}}</p>
+                        <p>Here is some additional details about the product</p>
+                        <p>Here is some additional details about the product</p>
+                    </div>
+
+                    <div class="button">
+                        <button class="buy">Buy Now</button>
+                        <button class="add">Add Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
